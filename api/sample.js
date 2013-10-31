@@ -4,7 +4,7 @@ function Sample(io){
 			"test": "sample data"
 		}
 		//optional
-		io.sockets.emit('getCalled', data); 
+		io.sockets.emit('getcalled', data);
 		//return json
 		res.json(data);	
 		//if error, etc... 

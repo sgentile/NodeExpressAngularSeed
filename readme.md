@@ -1,5 +1,6 @@
 NodeExpressAngularSeed
-npm install
+npm install from main directory (this is your node express server)
+npm install from client directory (this of this as a separate application - this is your client)
 node app.js
 
 The client add is in client and uses yeoman

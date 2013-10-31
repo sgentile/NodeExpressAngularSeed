@@ -13,7 +13,7 @@ angular.module('clientApp')
                 // this callback will be called asynchronously
                 // when the response is available
                 console.log(data);
-
+                $scope.data = data;
 
             }).
             error(function (data, status, headers, config) {
@@ -22,8 +22,9 @@ angular.module('clientApp')
                 console.log('error get');
             });
 
-        socket.on('getCalled', function(eventObj){
-            console.log('getCalled', eventObj);
-        });
+        /*
+        socket.on('getcalled', function(eventObj){
+            $scope.socketdata = data;
+        });*/
 
     });
