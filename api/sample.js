@@ -1,18 +1,12 @@
 function Sample(io){
-	Sample.get = function(req, res){	
-		var data = {
-			"test": "sample data"
+    Sample.get = function(req, res){
+        var data = {
+			test: "sample data"
 		}
-		//optional
-		io.sockets.emit('getcalled', data);
-		//return json
-		res.json(data);	
-		//if error, etc... 
-		//res.status(404);
-		//res.status(500);
-		//...
+        io.sockets.emit('getcalled', {test: "sample socket data"});
+        //io.emit('an event sent to all connected clients 2');
+		res.json(data);
 	}
 	return Sample;
 }
-
 module.exports = Sample;

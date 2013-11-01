@@ -8,6 +8,10 @@ angular.module('clientApp')
             'Karma'
         ];
 
+        socket.on('getcalled', function(data){
+            $scope.socketdata = data;
+        });
+
         $http({method: 'GET', url: '/api/sample'}).
             success(function (data, status, headers, config) {
                 // this callback will be called asynchronously
@@ -21,10 +25,4 @@ angular.module('clientApp')
                 // or server returns response with an error status.
                 console.log('error get');
             });
-
-        /*
-        socket.on('getcalled', function(eventObj){
-            $scope.socketdata = data;
-        });*/
-
     });

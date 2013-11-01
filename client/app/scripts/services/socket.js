@@ -5,6 +5,7 @@ angular.module('clientApp')
         var socket = io.connect('http://localhost:3000');
         return {
             on: function (eventName, callback) {
+                debugger;
                 socket.on(eventName, function () {
                     var args = arguments;
                     $rootScope.$apply(function () {
