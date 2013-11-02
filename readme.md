@@ -16,6 +16,7 @@ This repository provides two applications - the main directory contains the serv
 ###Client
 Inside the 'client' directory is the client side application that uses grunt and bower.  To install the client components - run
 	
+	cd client
 	npm install
 	
 from this directory.
@@ -31,6 +32,7 @@ from the main directory.  This will launch the express web server (on port 3000 
 ###Client
 In a second terminal - goto the client directory and run 
 
+	cd client
 	grunt server
 	
 This will launch the client side application (on port 9000 by default).  This project uses live-reload so you can directly make changes to the application while it is running.   
@@ -40,6 +42,7 @@ As mentioned above, this uses the grunt proxy task to accomplish this.  All requ
 ##Building and Deploying
 In the above description, the client app is running separate from the server.  In order to build the project, we need to run 
 
+	cd client
 	grunt build --force
 	
 (note, I will be looking into removing --force, for now it doesn't like deleting the public directory structure)
