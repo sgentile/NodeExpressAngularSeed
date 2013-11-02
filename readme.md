@@ -18,6 +18,7 @@ Inside the 'client' directory is the client side application that uses grunt and
 	
 	cd client
 	npm install
+	bower
 	
 from this directory.
 
