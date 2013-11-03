@@ -17,8 +17,7 @@ This repository provides two applications - the main directory contains the serv
 Inside the 'client' directory is the client side application that uses grunt and bower.  To install the client components - run
 	
 	cd client
-	npm install
-	bower
+	bower install && npm install
 	
 from this directory.
 
